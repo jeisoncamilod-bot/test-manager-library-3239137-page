@@ -1,50 +1,89 @@
-# test-manager-library-3239137-page
+# Manager Library — Public Presentation Site
 
-> **Prueba técnica · Ficha ADSO 3239137**
-> Horario: **viernes 23 de octubre de 2026, de 7:00 a. m. a 11:00 a. m.** (hora Colombia). Entrega a las **11:00 a. m.**
+## Overview
 
-Este repositorio es el **sitio público estático** de presentación de *Manager Library*; no habla con la API. **Empieza vacío a propósito**: se construye en el fork de cada aprendiz.
+This repository contains the documentation for the public presentation site of **Manager Library**, a library management system designed to organize books, members, loans, and related library operations.
 
-## Instrucciones
+The public presentation site is intended to introduce the project, explain its purpose, describe its main capabilities, and provide general information about the system.
 
-Cada aprendiz debe **crear el fork** de los seis repositorios del proyecto y **resolver el proyecto
-con el spec planteado**.
+This repository is part of the Manager Library project, which is organized into separate repositories according to their responsibilities.
 
-1. Hacer fork, a su cuenta de GitHub, de cada repositorio de la tabla del final.
-2. Leer el spec en [`test-manager-library-3239137-docs`](https://github.com/code-sena/test-manager-library-3239137-docs).
-   Se entrega en dos versiones: `spec-python/` y `spec-.net/`.
-3. Desarrollar en los forks.
+## Purpose
 
-## El reto se desarrolla con React y PHP (Laravel)
+The purpose of this repository is to define and document the role of the public presentation site within the Manager Library project.
 
-El spec está escrito para Python y para .NET, pero el reto **no** se hace en esos lenguajes:
+The site provides general information about the project for visitors and stakeholders. It is separate from the application interface used to manage library operations and does not directly communicate with the backend API.
 
-| Capa | Tecnología del reto |
+## Scope
+
+The public presentation site is intended to cover the following areas:
+
+- **Project introduction:** Explain what Manager Library is and the problem it addresses.
+- **System overview:** Describe the main purpose and general capabilities of the library management system.
+- **Project information:** Present relevant information about the system and its organization.
+- **Repository separation:** Clarify the distinction between the public presentation site, the React application, and the Laravel API.
+
+### Out of Scope
+
+The public presentation site is not responsible for:
+
+- Managing books, categories, or library members.
+- Registering loans or processing book returns.
+- Authenticating users or managing access permissions.
+- Performing database operations.
+- Implementing backend business rules.
+- Communicating directly with the backend API.
+- Replacing the React application used for library operations.
+
+These responsibilities belong to other components of the Manager Library project.
+
+## Relationship with Other Repositories
+
+Manager Library is organized into six repositories:
+
+| Repository | Responsibility |
 |---|---|
-| Frontend | React |
-| Backend | PHP con Laravel |
+| `test-manager-library-3239137-docs` | Project specifications and technical documentation. |
+| `test-manager-library-3239137-api` | Backend API implemented with Laravel. |
+| `test-manager-library-3239137-app` | React application for library management operations. |
+| `test-manager-library-3239137-page` | Public presentation site documented in this repository. |
+| `test-manager-library-3239137-infra` | Infrastructure configuration, containers, networking, and database services. |
+| `test-manager-library-3239137-tool` | Supporting utilities and test or demonstration data tools. |
 
-Lo que el spec define sobre el negocio —historias, criterios de aceptación, reglas, contrato de la
-API, modelo de datos— se respeta. Lo que define sobre la tecnología se traduce a React y Laravel.
+Each repository has a separate responsibility. The public presentation site must remain independent of the backend API and the operational application.
 
-## La prueba no consiste en escribir el código
+## Technology Context
 
-El propósito principal es ver la **capacidad de desempeño con SDD** (*Spec-Driven Development*,
-desarrollo guiado por especificación): cómo se lee, se interpreta y se aplica una especificación
-para llevarla a un stack distinto. El código es el medio, no el fin.
+The Manager Library project uses different technologies according to each repository's responsibility.
 
-## Entrega
+- **React:** Used by the application repository.
+- **Laravel and PHP:** Used by the backend API repository.
+- **PostgreSQL:** Used as the project's relational database engine.
+- **HTML and CSS:** Relevant technologies for a static presentation site.
 
-Cuenta lo que quede **subido a los forks antes de las 11:00 a. m.** Lo que llegue después no se revisa.
-No hay prórroga: suban avances parciales con commits pequeños durante la prueba.
+This README documents the purpose and boundaries of the presentation site. It does not claim that specific pages, components, or features have already been implemented.
 
-## Los seis repositorios
+## Development Guidelines
 
-| Repositorio | Qué va ahí |
-|---|---|
-| [`test-manager-library-3239137-docs`](https://github.com/code-sena/test-manager-library-3239137-docs) | El spec: `spec-python/` y `spec-.net/` |
-| [`test-manager-library-3239137-api`](https://github.com/code-sena/test-manager-library-3239137-api) | Backend en PHP (Laravel) |
-| [`test-manager-library-3239137-app`](https://github.com/code-sena/test-manager-library-3239137-app) | Frontend en React |
-| [`test-manager-library-3239137-page`](https://github.com/code-sena/test-manager-library-3239137-page) | Sitio público estático de presentación |
-| [`test-manager-library-3239137-infra`](https://github.com/code-sena/test-manager-library-3239137-infra) | Contenedores, red, volúmenes y motor de base de datos vacío |
-| [`test-manager-library-3239137-tool`](https://github.com/code-sena/test-manager-library-3239137-tool) | Utilidades: sembrador de datos de demostración |
+When developing or maintaining this repository, follow these guidelines:
+
+1. Keep the public presentation site focused on introducing the project.
+2. Do not duplicate the operational features of the React application.
+3. Do not implement backend business logic in the presentation site.
+4. Keep project descriptions consistent with the official specifications in the documentation repository.
+5. Avoid claiming that features are available unless they have been implemented and verified.
+6. Keep the documentation updated when the repository's purpose or responsibilities change.
+
+## Current Repository Status
+
+The repository is intended to contain the public presentation site for Manager Library.
+
+The initial repository structure is intentionally minimal. The actual implementation status must be verified against the files committed to the repository.
+
+This README documents the intended purpose, scope, boundaries, and relationship with the other project repositories. It does not, by itself, indicate that the presentation site has been implemented.
+
+## Related Documentation
+
+For additional information, consult the `test-manager-library-3239137-docs` repository, which contains the project specifications and technical documentation.
+
+Refer to the other repositories for details about the backend API, React application, infrastructure, and supporting tools.
